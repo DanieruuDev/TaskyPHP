@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+.logo-name {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 32px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 0px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s ease;
+}
+.register {
+  color: white;
+  background-color: var(--primary-color);
+}
+.authentication-button {
+  width: 100%;
+  max-width: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.login:hover {
+  background-color: #dbdbdb;
+}
+.register:hover {
+  background-color: transparent;
+  border: solid 1px var(--primary-color);
+  color: var(--primary-color);
+  padding: 9px 19px;
+}
