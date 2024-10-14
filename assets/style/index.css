@@ -1,14 +1,3 @@
-* {
-  font-family: "Roboto", sans-serif;
-}
-:root {
-  --primary-color: #1c87e1;
-  --secondary-color: #dbdbdb;
-}
-body {
-  padding: 0;
-  margin: 0;
-}
 .hero-title {
   font-size: 30px;
   font-weight: 500;
@@ -47,20 +36,4 @@ body {
 .info-subsection {
   margin-top: 50px;
   max-width: 550px;
-}
-
-.global-container {
-  max-width: 1050px;
-  margin: 0 auto;
-  padding-right: 3vw;
-  padding-left: 3vw;
-  box-sizing: content-box;
-}
-
-@media screen and (max-width: 768px) {
-  .global-container {
-    padding-right: 3vw;
-    padding-left: 3vw;
-    box-sizing: content-box;
-  }
 }
