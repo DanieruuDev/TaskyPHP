@@ -1,9 +1,15 @@
-.register-title {
+.forgot-title {
   margin-top: 40px;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
-  color: #424242;
+}
+.forgot-subtitle {
+  font-size: 14px;
+  color: #686868;
+  font-weight: 00;
+  text-align: center;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 .input-group {
@@ -19,6 +25,7 @@
 }
 .input-group label {
   font-size: 15px;
+  margin-bottom: 5px;
 }
 .main-subclass {
   margin: auto;
@@ -29,37 +36,16 @@
   background: var(--primary-color);
   width: 100%;
   color: white;
+  margin-top: 5px;
+  font-size: small;
 }
-.forgot-pass,
-.signup {
+.forgot-pass {
   color: var(--primary-color);
   font: 500 18px;
   text-decoration: none;
   text-align: center;
   display: block;
-  margin-top: 10px;
-}
-.divider {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin: 12px 0;
-}
-
-.divider hr {
-  flex-grow: 1;
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 0 10px;
-}
-
-.divider span {
-  font-size: 16px;
-  color: #686868;
-}
-.login-option {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: small;
 }
