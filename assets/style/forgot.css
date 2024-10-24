@@ -1,0 +1,51 @@
+.forgot-title {
+  margin-top: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+.forgot-subtitle {
+  font-size: 14px;
+  color: #686868;
+  font-weight: 00;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+.input-group input {
+  border: 1px solid var(--primary-color);
+  padding: 5px 8px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.input-group label {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.main-subclass {
+  margin: auto;
+  padding-top: 50px;
+  max-width: 400px;
+}
+.submit {
+  background: var(--primary-color);
+  width: 100%;
+  color: white;
+  margin-top: 5px;
+  font-size: small;
+}
+.forgot-pass {
+  color: var(--primary-color);
+  font: 500 18px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: small;
+}
