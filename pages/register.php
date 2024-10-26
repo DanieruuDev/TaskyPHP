@@ -13,6 +13,7 @@
       <a href="/" class="logo-name">Tasky</a>
     </header>
     <main class="global-container">    
+
     <?php 
     if(isset($_POST["submit"])) {
       $username = $_POST["username"];
@@ -20,7 +21,15 @@
       $email = $_POST["email"];
       $errors = array();
       $passHash = password_hash($password, PASSWORD_DEFAULT);
-      echo $passHash;
+      require_once "../includes/mysql.php";
+
+      //check if email exist in the database
+      $sql = "SELECT * FROM user WHERE email = '$email'";
+      $result = mysqli_query($conn, $sql);
+      if(mysqli_num_rows($result) == 0) {
+        array_push($errors, "Email already exists");
+      }
+      //field validation
       if(empty($username) || empty($password) || empty($email)) {
         array_push($errors,"All fields are required");
       }
@@ -30,12 +39,13 @@
       if(strlen($password) < 8) {
         array_push($errors,"Password must be atleast 8 characters long");
       }
+      //check if error exist
       if(count($errors) > 0){
         foreach($errors as $error) {
           echo"".$error."";
       }
     } else {
-      require_once "../includes/mysql.php";
+      
       $sql = "INSERT INTO users (username, email, password) VALUES (?, ?, ?)";
       $stmt = mysqli_stmt_init($con);
       $prepareStmt = mysqli_stmt_prepare($stmt, $sql);
@@ -48,7 +58,6 @@
       }
     }
   }
-
     ?>
 
       <div class="main-subclass">
