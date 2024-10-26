@@ -29,6 +29,11 @@
   background: var(--primary-color);
   width: 100%;
   color: white;
+  padding: 8px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 15px;
+  cursor: pointer;
 }
 .forgot-pass,
 .signup {

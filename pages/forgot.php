@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="/assets/style/header.css" />
-    <link rel="stylesheet" href="/assets/style/general.css" />
-    <link rel="stylesheet" href="/assets/style/forgot.css" />
+    <link rel="stylesheet" href="../assets/style/header.css" />
+    <link rel="stylesheet" href="../assets/style/general.css" />
+    <link rel="stylesheet" href="../assets/style/forgot.css" />
   </head>
   <body>
     <header class="header global-container">
-      <a class="logo-name">Tasky</a>
+      <a href="#" class="logo-name">Tasky</a>
     </header>
     <main class="global-container">
       <div class="main-subclass">
@@ -30,7 +30,7 @@
             <input type="email" name="email" id="email" />
           </div>
           <button type="submit" class="submit">Submit reset request</button>
-          <a href="" class="forgot-pass">Return to login</a>
+          <a href="login.html" class="forgot-pass">Return to login</a>
         </form>
       </div>
     </main>

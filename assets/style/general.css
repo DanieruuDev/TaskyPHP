@@ -22,6 +22,9 @@ header {
   padding-left: 3vw;
   box-sizing: content-box;
 }
+.logo-name {
+  text-decoration: none;
+}
 
 @media screen and (max-width: 768px) {
   .global-container {

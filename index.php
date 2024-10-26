@@ -10,18 +10,20 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/style/index.css" />
-    <link rel="stylesheet" href="/assets/style/header.css" />
-    <link rel="stylesheet" href="/assets/style/general.css" />
+    <link rel="stylesheet" href="assets/style/index.css" />
+    <link rel="stylesheet" href="assets/style/header.css" />
+    <link rel="stylesheet" href="assets/style/general.css" />
   </head>
   <body>
     <header class="header global-container">
-      <div class="logo-name">Tasky</div>
+      <a href="/" class="logo-name">Tasky</a>
       <div class="authentication-button">
-        <a href="pages/login.html">
+        <a href="pages/login.php">
           <button class="login">Login</button>
         </a>
-        <button class="register">Get started</button>
+        <a href="pages/register.php">
+          <button class="register">Get started</button>
+        </a>
       </div>
     </header>
     <div class="hero-section">
@@ -35,7 +37,9 @@
           organized and productive.
         </div>
         <div>
-          <button class="register">Get started</button>
+          <a href="pages/register.php">
+            <button class="register">Get started</button>
+          </a>
         </div>
       </div>
     </div>
