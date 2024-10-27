@@ -63,8 +63,8 @@ if (isset($_POST["submit"])) {
             <hr />
           </div>
           <div class="login-option">
-            <img src="/assets/images/google-icon.png" alt="google-icon" />
-            <img src="/assets/images/microsoft-icon.png" alt="microsoft-icon" />
+            <img src="../assets/images/google-icon.png" />
+            <img src="../assets/images/microsoft-icon.png" alt="microsoft-icon" />
           </div>
           <a href="register.php" class="signup"
             >Doesn't have an account? Sign up.</a

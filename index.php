@@ -11,8 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/style/index.css?v=1.0" />
-<link rel="stylesheet" href="assets/style/header.css?v=1.0" />
-<link rel="stylesheet" href="assets/style/general.css?v=1.0" />
+    <link rel="stylesheet" href="assets/style/header.css?v=1.0" />
+    <link rel="stylesheet" href="assets/style/general.css?v=1.0" />
 
   </head>
   <body>
@@ -56,7 +56,9 @@
           productive, no matter the size of the project.
         </p>
       </div>
-      <div></div>
+      <div class="image-container">
+        <img src="assets/images/tasky-sample.png" alt="Tasky Sample" class="tasky-sample">
+      </div>
     </div>
   </body>
 </html>

@@ -1,6 +1,7 @@
 .hero-title {
   font-size: 30px;
   font-weight: 500;
+  text-align: center;
 }
 .hero-section {
   background-color: #d9d9d9;
@@ -13,6 +14,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 .hero-subtitle {
   font-size: 17px;
@@ -33,7 +35,52 @@
   max-width: 690px;
   margin: 10px 0;
 }
+.info-section {
+  padding-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+}
 .info-subsection {
   margin-top: 50px;
   max-width: 550px;
+}
+.image-container {
+  max-width: 500px;
+}
+.tasky-sample {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .info-section {
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "text";
+    gap: 5px;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .info-subsection {
+    grid-area: text;
+    margin-bottom: 20px;
+  }
+
+  .image-container {
+    grid-area: image;
+  }
+
+  .hero-title {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .hero-subtitle {
+    font-size: 16px;
+  }
 }

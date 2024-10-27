@@ -34,3 +34,17 @@
   color: var(--primary-color);
   padding: 9px 19px;
 }
+@media screen and (max-width: 700px) {
+  .register-btn,
+  .login-btn {
+    font-size: 14px;
+  }
+
+  .logo-name {
+    font-size: 28px;
+  }
+  .authentication-button {
+    width: 100%;
+    max-width: 195px;
+  }
+}
