@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="../assets/style/header.css">
-    <link rel="stylesheet" href="../assets/style/general.css" />
-    <link rel="stylesheet" href="../assets/style/register.css" />
+    <link rel="stylesheet" href="../assets/style/header.css?v=1.0">
+    <link rel="stylesheet" href="../assets/style/general.css?v=1.0" />
+    <link rel="stylesheet" href="../assets/style/register.css?v=1.0" />
   </head>
   <body>
     <header class="header global-container">
@@ -21,13 +21,19 @@
       $email = $_POST["email"];
       $errors = array();
       $passHash = password_hash($password, PASSWORD_DEFAULT);
+      
       require_once "../includes/mysql.php";
 
       //check if email exist in the database
-      $sql = "SELECT * FROM user WHERE email = '$email'";
-      $result = mysqli_query($conn, $sql);
-      if(mysqli_num_rows($result) == 0) {
-        array_push($errors, "Email already exists");
+      $sql = "SELECT * FROM users WHERE email = '$email'";
+      $result = mysqli_query($con, $sql);
+      
+      if ($result) {
+          if (mysqli_num_rows($result) > 0) {
+              array_push($errors, "Email already exists");
+          }
+      } else {
+          array_push($errors, "Database error: " . mysqli_error($con));
       }
       //field validation
       if(empty($username) || empty($password) || empty($email)) {
@@ -52,6 +58,7 @@
       if($prepareStmt){
         mysqli_stmt_bind_param($stmt,"sss", $username, $email, $passHash);
         mysqli_stmt_execute($stmt);
+        header("Location: login.php");
         echo "You are registered";
       } else{
         die("Something went wrong");

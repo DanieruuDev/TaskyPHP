@@ -3,7 +3,8 @@
   font-weight: bold;
   font-size: 32px;
 }
-button {
+.register-btn,
+.login-btn {
   padding: 10px 20px;
   font-size: 16px;
   border: 0px solid;
@@ -12,10 +13,7 @@ button {
   font-weight: bold;
   transition: background-color 0.3s, color 0.3s ease;
 }
-.register {
-  color: white;
-  background-color: var(--primary-color);
-}
+
 .authentication-button {
   width: 100%;
   max-width: 210px;
@@ -23,10 +21,14 @@ button {
   align-items: center;
   justify-content: space-between;
 }
-.login:hover {
+.login-btn:hover {
   background-color: #dbdbdb;
 }
-.register:hover {
+.register-btn {
+  color: white;
+  background-color: var(--primary-color);
+}
+.register-btn:hover {
   background-color: transparent;
   border: solid 1px var(--primary-color);
   color: var(--primary-color);

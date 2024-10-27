@@ -10,19 +10,20 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/style/index.css" />
-    <link rel="stylesheet" href="assets/style/header.css" />
-    <link rel="stylesheet" href="assets/style/general.css" />
+    <link rel="stylesheet" href="assets/style/index.css?v=1.0" />
+<link rel="stylesheet" href="assets/style/header.css?v=1.0" />
+<link rel="stylesheet" href="assets/style/general.css?v=1.0" />
+
   </head>
   <body>
     <header class="header global-container">
       <a href="/" class="logo-name">Tasky</a>
       <div class="authentication-button">
         <a href="pages/login.php">
-          <button class="login">Login</button>
+          <button class="login-btn">Login</button>
         </a>
         <a href="pages/register.php">
-          <button class="register">Get started</button>
+          <button class="register-btn">Get started</button>
         </a>
       </div>
     </header>
@@ -38,7 +39,7 @@
         </div>
         <div>
           <a href="pages/register.php">
-            <button class="register">Get started</button>
+            <button class="register-btn">Get started</button>
           </a>
         </div>
       </div>
