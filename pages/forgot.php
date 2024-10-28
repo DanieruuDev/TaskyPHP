@@ -30,7 +30,7 @@
             <input type="email" name="email" id="email" />
           </div>
           <button type="submit" class="submit">Submit reset request</button>
-          <a href="login.html" class="forgot-pass">Return to login</a>
+          <a href="login.php" class="forgot-pass">Return to login</a>
         </form>
       </div>
     </main>

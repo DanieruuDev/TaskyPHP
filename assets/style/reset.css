@@ -1,16 +1,16 @@
-.forgot-title {
-  margin-top: 40px;
-  font-size: 25px;
+.reset-title {
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
+  color: #424242;
 }
-.forgot-subtitle {
-  font-size: 14px;
+.reset-subtitle {
+  font-size: 18px;
   color: #686868;
-  font-weight: 00;
+  font-weight: bold;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 7px;
+  margin-bottom: 35px;
 }
 .input-group {
   display: flex;
@@ -25,31 +25,24 @@
 }
 .input-group label {
   font-size: 15px;
-  margin-bottom: 5px;
 }
 .main-subclass {
   margin: auto;
   padding-top: 50px;
   max-width: 400px;
 }
-.submit {
+.reset {
   background: var(--primary-color);
   width: 100%;
   color: white;
-  padding: 8px;
+  padding: 10px;
   border-radius: 5px;
   border: 0;
   font-size: 15px;
   cursor: pointer;
   transition: opacity 0.3s;
-}
-.forgot-pass {
-  color: var(--primary-color);
-  font: 500 18px;
-  text-decoration: none;
-  text-align: center;
-  display: block;
-  margin-top: 15px;
   font-weight: bold;
-  font-size: small;
+}
+.reset:hover {
+  opacity: 0.9;
 }
