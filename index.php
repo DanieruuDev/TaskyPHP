@@ -17,7 +17,7 @@
   </head>
   <body>
     <header class="header global-container">
-      <a href="/" class="logo-name">Tasky</a>
+      <a href="index.php" class="logo-name">Tasky</a>
       <div class="authentication-button">
         <a href="pages/login.php">
           <button class="login-btn">Login</button>

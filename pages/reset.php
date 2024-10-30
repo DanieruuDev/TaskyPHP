@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="header global-container">
-      <a href="/" class="logo-name">Tasky</a>
+      <a href="/index.php" class="logo-name">Tasky</a>
     </header>
     <main class="global-container">
       <div class="main-subclass">
